@@ -1,0 +1,100 @@
+/*
+*****************************
+FONTS
+****************************
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  font-family: 'Inter', sans-serif;
+}
+
+/*
+*****************************
+VARIABLES
+****************************
+*/
+
+:root{
+  --sunset-orange:#ff6900;
+  --sunset-pink:#eb144c;
+  --sand-light-brown:#f3cc91;
+  --sand-dark-brown:#eab875;
+  --sand-medium-brown:#e1c7a5;
+  --water-light-blue:#d3e3e2;
+  --water-dark-blue:#7bc5c1;
+}
+
+/*
+*****************************
+WHALE ANIMATION
+****************************
+*/
+
+@keyframes swimForward {
+  0% {
+    right: -50%;
+  }
+  100% {
+    right: 150%;
+  }
+}
+
+@keyframes tailWave {
+  0% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(5deg);
+  }
+  60% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+
+.whale-wrapper {
+  position: fixed;
+  top: 60%;
+  right: 0;
+  height: 500px;
+  width: 100%;
+}
+
+.whale {
+  position: absolute;
+  width: 400px;
+  animation-name: swimForward;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+.whale-cls-1.tail {
+  transform-origin: 60% 50%;
+  animation-name: tailWave;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+#about-section{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.section-container{
+  width:90vw;
+  border-radius:10px;
+  height:80vh;
+  background-color:var(--sand-light-brown);
+}
