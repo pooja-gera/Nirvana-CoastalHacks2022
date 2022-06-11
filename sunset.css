@@ -1,3 +1,15 @@
+/*
+*****************************
+FONTS
+****************************
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  font-family: 'Inter', sans-serif;
+}
+
 body {
     cursor: pointer;
     overflow: hidden;
@@ -349,9 +361,41 @@ body {
     z-index: 10;
   }
   #content-box{
-      position: absolute;
-      left: 400px;
-      top: 500px;
       z-index: 20;
       color: white;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      width:100%;
+      height:100px;
+  }
+
+  body{
+    display:flex;
+    flex-direction: column;
+    margin:0;
+    padding:0;
+  }
+
+  button{
+    cursor:pointer;
+  }
+
+  #content-button{
+    border-radius:20px;
+    background-color: #fff;
+    border:none;
+    outline:none;
+    padding:20px;
+    z-index:21;
+    cursor:pointer;
+  }
+
+  a{
+    text-decoration:none;
+  }
+
+  a:hover{
+    text-decoration:none;
   }
