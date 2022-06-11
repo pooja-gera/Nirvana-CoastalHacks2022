@@ -86,6 +86,12 @@ WHALE ANIMATION
   animation-iteration-count: infinite;
 }
 
+/*
+*****************************
+ABOUT SECTION
+****************************
+*/
+
 #about-section{
   display:flex;
   align-items:center;
@@ -98,3 +104,133 @@ WHALE ANIMATION
   height:80vh;
   background-color:var(--sand-light-brown);
 }
+
+/*
+*****************************
+NAVIGATION BAR
+****************************
+*/
+
+ul{
+    list-style:none;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+li{
+    padding:20px;
+    margin-right:20px;
+}
+
+/*
+*****************************
+FOOTER ICONS
+****************************
+*/
+
+#footer{
+  padding-top:100px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-wrapper {
+  display: inline-flex;
+  list-style: none;
+}
+
+.footer-wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.footer-wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.footer-wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.footer-wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.footer-wrapper .icon:hover span,
+.footer-wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.footer-wrapper .facebook:hover,
+.footer-wrapper .facebook:hover .tooltip,
+.footer-wrapper .facebook:hover .tooltip::before {
+  background: #1877F2;
+  color: #ffffff;
+}
+
+.footer-wrapper .twitter:hover,
+.footer-wrapper .twitter:hover .tooltip,
+.footer-wrapper .twitter:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+.footer-wrapper .instagram:hover,
+.footer-wrapper .instagram:hover .tooltip,
+.footer-wrapper .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #ffffff;
+}
+
+.footer-wrapper .github:hover,
+.footer-wrapper .github:hover .tooltip,
+.footer-wrapper .github:hover .tooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
+
+.footer-wrapper .youtube:hover,
+.footer-wrapper .youtube:hover .tooltip,
+.footer-wrapper .youtube:hover .tooltip::before {
+  background: #CD201F;
+  color: #ffffff;
+}
+
+
