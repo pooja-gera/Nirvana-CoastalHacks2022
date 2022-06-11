@@ -110,7 +110,7 @@ ABOUT SECTION
   height:164px;
   position:absolute;
   left:1320px;
-  top:500px;
+  top:550px;
 }
 
 /*
@@ -138,7 +138,6 @@ FOOTER ICONS
 */
 
 #footer{
-  padding-top:100px;
   display:flex;
   align-items:center;
   justify-content: center;
@@ -242,3 +241,329 @@ FOOTER ICONS
 }
 
 
+
+/*
+*****************************
+HERO SECTION
+****************************
+*/
+
+#hero-section{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+section{
+  margin-bottom:100px;
+}
+
+.hero-section-container{
+  width:90vw;
+  border-radius:10px;
+  height:80vh;
+  background-image: url("./images/sand-texture-top-view-2021-08-28-02-01-21-utc.jpg");
+  background-size: cover;
+  background-color:var(--sand-light-brown);
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index:-4;
+}
+
+
+/*
+*****************************
+HERO SECTION ANIMATION
+****************************
+*/
+
+.hero-window {
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%) scale(1);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 20px solid #95d8de;
+  animation: anim-sky 10s linear infinite;
+  position: absolute;
+  left:300px;
+
+}
+.hero-sun {
+  position: absolute;
+  width: 55.55px;
+  height: 55.55px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff 0%, yellow 10%, #fdfbb8 70%);
+  left: calc(50% - 50px);
+  top: 15px;
+  transform-origin: 50% 240px;
+  animation: anim-sun 10s linear infinite;
+}
+.hero-wave {
+  position: absolute;
+  width: 100%;
+  height: 140.22px;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(circle farthest-corner at 50% 0%, transparent 30%, #2179ea 30%, #2179ea 45%, #1d86ea 45%, #1d86ea 60%, #2a9eea 60%, #2a9eea 75%, #02b0ea 75%);
+  animation: anim-h-wave 4s linear infinite, anim-v-wave 2s infinite alternate;
+}
+.hero-island {
+  width: 133.33px;
+  height: 66.67px;
+  position: absolute;
+  bottom: 50px;
+  left: 120px;
+  background: #f4d86f;
+  border-radius: 120px 120px 0 0;
+  animation: anim-island 10s linear infinite;
+}
+.hero-tree {
+  position: absolute;
+  border: 5px solid transparent;
+  border-left: 15px solid #9f5628;
+  border-bottom: 25px solid transparent;
+  width: 90px;
+  height: 200px;
+  left: 70px;
+  top: -50px;
+  border-radius: 50%;
+  transform: rotate(18deg);
+}
+.hero-tree:before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  background: #6f3b16;
+  height: 2px;
+  bottom: 15px;
+  left: -7px;
+  box-shadow: 0 -8px 0 0 #6f3b16, 0 -16px 0 0 #6f3b16, 0 -24px 0 0 #6f3b16, 2px -32px 0 0 #6f3b16, 4px -40px 0 0 #6f3b16, 6px -48px 0 0 #6f3b16, 8px -56px 0 0 #6f3b16, 10px -64px 0 0 #6f3b16, 12px -72px 0 0 #6f3b16, 16px -80px 0 0 #6f3b16, 20px -88px 0 0 #6f3b16, 24px -96px 0 0 #6f3b16, 28px -104px 0 0 #6f3b16, 32px -112px 0 0 #6f3b16, 40px -120px 0 0 #6f3b16, 46px -128px 0 0 #6f3b16;
+  transform: rotate(-18deg);
+}
+.hero-leaf {
+  position: absolute;
+  top: -55px;
+  left: -22px;
+  width: 50px;
+  height: 80px;
+  border-radius: 50%;
+  border-left: 5px solid #349838;
+  box-shadow: -5px 0 0 0 #3eb93f, inset 10px 0 0 0 #349838;
+  transform-origin: 50% 100%;
+}
+.hero-leaf-1 {
+  transform: rotate(-150deg) scaleX(-1);
+  z-index: 5;
+  animation: anim-leaf- 1-move 3s infinite;
+}
+@keyframes anim-leaf-1-move {
+  0%, 100% {
+    transform: rotate(-150deg) scaleX(-1);
+ }
+  50% {
+    transform: rotate(-155deg) scaleX(-1);
+ }
+}
+.hero-leaf-2 {
+  transform: rotate(-120deg) scaleX(-1);
+  z-index: 4;
+  animation: anim-leaf- 2-move 3s infinite;
+}
+@keyframes anim-leaf-2-move {
+  0%, 100% {
+    transform: rotate(-120deg) scaleX(-1);
+ }
+  50% {
+    transform: rotate(-124deg) scaleX(-1);
+ }
+}
+.hero-leaf-3 {
+  transform: rotate(-90deg) scaleX(-1);
+  z-index: 3;
+  animation: anim-leaf- 3-move 3s infinite;
+}
+@keyframes anim-leaf-3-move {
+  0%, 100% {
+    transform: rotate(-90deg) scaleX(-1);
+ }
+  50% {
+    transform: rotate(-93deg) scaleX(-1);
+ }
+}
+.hero-leaf-4 {
+  transform: rotate(-60deg) scaleX(-1);
+  z-index: 2;
+  animation: anim-leaf- 4-move 3s infinite;
+}
+@keyframes anim-leaf-4-move {
+  0%, 100% {
+    transform: rotate(-60deg) scaleX(-1);
+ }
+  50% {
+    transform: rotate(-62deg) scaleX(-1);
+ }
+}
+.hero-leaf-5 {
+  transform: rotate(-30deg) scaleX(-1);
+  z-index: 1;
+  animation: anim-leaf- 5-move 3s infinite;
+}
+@keyframes anim-leaf-5-move {
+  0%, 100% {
+    transform: rotate(-30deg) scaleX(-1);
+ }
+  50% {
+    transform: rotate(-31deg) scaleX(-1);
+ }
+}
+.hero-leaf-6 {
+  transform: rotate(30deg) scaleX(1);
+  z-index: 1;
+  animation: anim-leaf- 6-move 3s infinite;
+}
+@keyframes anim-leaf-6-move {
+  0%, 100% {
+    transform: rotate(30deg) scaleX(1);
+ }
+  50% {
+    transform: rotate(31deg) scaleX(1);
+ }
+}
+.hero-leaf-7 {
+  transform: rotate(60deg) scaleX(1);
+  z-index: 2;
+  animation: anim-leaf- 7-move 3s infinite;
+}
+@keyframes anim-leaf-7-move {
+  0%, 100% {
+    transform: rotate(60deg) scaleX(1);
+ }
+  50% {
+    transform: rotate(62deg) scaleX(1);
+ }
+}
+.hero-leaf-8 {
+  transform: rotate(90deg) scaleX(1);
+  z-index: 3;
+  animation: anim-leaf- 8-move 3s infinite;
+}
+@keyframes anim-leaf-8-move {
+  0%, 100% {
+    transform: rotate(90deg) scaleX(1);
+ }
+  50% {
+    transform: rotate(93deg) scaleX(1);
+ }
+}
+.hero-leaf-9 {
+  transform: rotate(120deg) scaleX(1);
+  z-index: 4;
+  animation: anim-leaf- 9-move 3s infinite;
+}
+@keyframes anim-leaf-9-move {
+  0%, 100% {
+    transform: rotate(120deg) scaleX(1);
+ }
+  50% {
+    transform: rotate(124deg) scaleX(1);
+ }
+}
+.hero-leaf-10 {
+  transform: rotate(150deg) scaleX(1);
+  z-index: 5;
+  animation: anim-leaf- 10-move 3s infinite;
+}
+@keyframes anim-leaf-10-move {
+  0%, 100% {
+    transform: rotate(150deg) scaleX(1);
+ }
+  50% {
+    transform: rotate(155deg) scaleX(1);
+ }
+}
+@keyframes anim-sky {
+  0%, 100% {
+    background: rgba(0, 0, 0, 0.35);
+ }
+  5%, 95% {
+    background: rgba(45, 136, 224, 0.35);
+ }
+  10%, 20%, 80%, 90% {
+    background: #c5e7f1;
+ }
+  40%, 60% {
+    background: #bff1ee;
+ }
+  50% {
+    background: #b4fffe;
+ }
+}
+@keyframes anim-sun {
+  0% {
+    transform: rotate(-150deg);
+    box-shadow: 0 0 75px 30px rgba(253, 251, 184, 0.5);
+ }
+  10%, 90% {
+    box-shadow: 0 0 125px 50px rgba(253, 251, 184, 0.65);
+ }
+  25%, 75% {
+    box-shadow: 0 0 325px 125px rgba(253, 251, 184, 0.85);
+ }
+  50% {
+    box-shadow: 0 0 400px 130px rgba(253, 251, 184, 0.85);
+ }
+  100% {
+    transform: rotate(150deg);
+    box-shadow: 0 0 75px 20px rgba(253, 251, 184, 0.5);
+ }
+}
+@keyframes anim-island {
+  0%, 100% {
+    background: #deb210;
+ }
+  10%, 90% {
+    background: #f4d86f;
+ }
+}
+@keyframes anim-h-wave {
+  0% {
+    background-position: -100px 0;
+ }
+  100% {
+    background-position: 100px 0;
+ }
+}
+@keyframes anim-v-wave {
+  0% {
+    background-size: 100px 220px;
+ }
+  100% {
+    background-size: 100px 270px;
+ }
+}
+@media (max-width: 800px) {
+  .hero-window {
+    transform: translate(-50%, -50%) scale(0.75);
+ }
+}
+@media (max-width: 360px) {
+  .hero-window {
+    transform: translate(-50%, -50%) scale(0.5);
+ }
+}
+@media (min-width: 1920px) {
+  .hero-window {
+    transform: translate(-50%, -50%) scale(1.5);
+ }
+}
