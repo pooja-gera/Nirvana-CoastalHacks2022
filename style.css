@@ -105,6 +105,14 @@ ABOUT SECTION
   background-color:var(--sand-light-brown);
 }
 
+.beach-ball-svg{
+  width:164px;
+  height:164px;
+  position:absolute;
+  left:1320px;
+  top:500px;
+}
+
 /*
 *****************************
 NAVIGATION BAR
