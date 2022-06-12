@@ -1,5 +1,8 @@
 <html>
    <head>
+      <link rel="shortcut icon" href="https://res.cloudinary.com/pooja-gera/image/upload/v1655035050/favicon_stpbgm.png">
+      <title>Nirvana | Sunsets</title>
+  
       <style>
          /*
 *****************************
@@ -65,10 +68,38 @@ body{
   min-height: 100%;
   z-index:-4;
 }
+
+.btn{
+   padding:20px;
+   color:white;
+   outline:none;
+   background-color: #2179EA;
+   border:none;
+   border-radius:10px;
+   cursor:pointer;
+}
+
+.upload-btn{
+   position:absolute;
+   left:200px;
+   top:300px;
+}
+
+.submit-btn{
+   padding:30px;
+   background-color: var(--sunset-pink);
+   position:absolute;
+   left:600px;
+   top:290px;
+}
       </style>
    </head>
    </head>
    <body>
+      <audio loop autoplay>
+         <source src="https://res.cloudinary.com/pooja-gera/video/upload/v1655033873/Hawaiian_Breeze_Acoustic_Vintage_Groove_hhiatq.mp4" type="audio/mpeg">
+     </audio>
+
       <video autoplay muted loop audio="muted" id="myVideo">
          <source
            src="https://res.cloudinary.com/pooja-gera/video/upload/v1655019937/compressed_bg_vid_jiqeys.mp4"
@@ -79,8 +110,8 @@ body{
          <div class="section-container">
             <form action = "/uploader" method = "POST"
             enctype = "multipart/form-data">
-            <input type = "file" name = "file" />
-            <input type = "submit"/>
+            <input type = "file" name = "file" class="btn upload-btn"/>
+            <input type = "submit" class="btn submit-btn"/>
          </form>
          </div>
       </div>
