@@ -139,6 +139,7 @@ ul{
 li{
     padding:20px;
     margin-right:20px;
+    cursor: pointer;
 }
 
 /*
@@ -420,7 +421,7 @@ HERO SECTION ANIMATION
   align-items: center;
   margin-top: 3%;
 }
-.upload .button, .upload .predict{
+.upload .button, .upload .predict-two{
   height: 50px;
 width: 150px;
 font-size: 15px;
@@ -441,9 +442,14 @@ border: none;
   left: 45px;
 }
 .upload-two{
+  display: block;
   position: absolute;
   top: 1850px;
-  left: 45px;
+  left: 580px;
+}
+.upload-two h2{
+  position: absolute;
+  left: 23px;
 }
 .upload-one .button{
   
