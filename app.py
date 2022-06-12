@@ -21,7 +21,7 @@ def model_predict(img_path):
     """
        model_predict will return the preprocessed image
     """
-    output_class = ['beautiful_sunset', 'normal_sunset']
+    output_class = ['You are an awesome photographer! This sunset is very pretty! Edward Weston would be proud of you ;)', 'Hmmmmm looks like you need to retry. Do not worry we cna help you enhance this image as well (Coming Soon)']
     test_image = image.load_img(img_path, target_size=(200, 200))
     test_image = image.img_to_array(test_image) / 255
     test_image = np.expand_dims(test_image, axis=0)
@@ -50,7 +50,8 @@ def upload():
 
         # Make prediction
         preds = model_predict(file_path)
-        return preds
+        output = preds
+        return render_template('uploadImg.html', output=output)
     return None
 
 if __name__ == '__main__':
