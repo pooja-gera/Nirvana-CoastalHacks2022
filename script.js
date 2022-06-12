@@ -11,17 +11,7 @@ function makeNavSticky(){
 
 var predictButton = document.querySelector(".predict-two")
 console.log(predictButton);
-let optionOne = document.querySelector(".option-one");
-let optionTwo = document.querySelector(".option-two");
-let containerOne = document.querySelector(".section-container")
-let containerTwo = document.querySelector(".parttwo")
 
-optionOne.addEventListener("click", () => {
-    containerOne.scrollIntoView({behavior:"smooth"});
-})
-optionTwo.addEventListener("click", () => {
-    containerTwo.scrollIntoView({behavior:"smooth"});
-})
 
 function showPosition(position) {
     console.log("Latitude: " + position.coords.latitude +
