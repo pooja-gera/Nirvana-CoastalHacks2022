@@ -96,6 +96,7 @@ ABOUT SECTION
   display:flex;
   align-items:center;
   justify-content:center;
+  flex-direction: column;
 }
 
 .section-container{
@@ -103,6 +104,9 @@ ABOUT SECTION
   border-radius:10px;
   height:80vh;
   background-color:var(--sand-light-brown);
+}
+.parttwo{
+  margin-top: 100px;
 }
 
 .beach-ball-svg{
@@ -113,6 +117,12 @@ ABOUT SECTION
   top:550px;
 }
 
+.section-one-ball{
+  top: 1250px;
+}
+.section-two-ball{
+  top: 1970px;
+}
 /*
 *****************************
 NAVIGATION BAR
@@ -295,7 +305,8 @@ HERO SECTION ANIMATION
   border: 20px solid #95d8de;
   animation: anim-sky 10s linear infinite;
   position: absolute;
-  left:300px;
+  left: 300px;
+  top: 410px;
 
 }
 .hero-sun {
@@ -366,6 +377,90 @@ HERO SECTION ANIMATION
   transform: rotate(-150deg) scaleX(-1);
   z-index: 5;
   animation: anim-leaf- 1-move 3s infinite;
+}
+.hero-left{
+ height: 100%;
+ width: 20%;
+}
+.hero-right{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+}
+.hero-right h1{
+  position: absolute;
+  left: 600px;
+  top: 300px;
+}
+.hero-right p{
+  position: absolute;
+  top: 340px;
+  left: 600px;
+  
+}
+.hero-right .para{
+  position: absolute;
+    top: 380px;
+    width: 40%;
+}
+.section-one-window{
+  top: 1150px;
+}
+.section-two-window{
+  top: 1870px;
+}
+.upload{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+.upload .button, .upload .predict{
+  height: 50px;
+width: 150px;
+font-size: 15px;
+border-radius: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: var(--water-dark-blue);
+/* box-shadow: 5px 10px 20px #66bb6a79; */
+color: white;
+cursor: pointer;
+margin: 0px 15px;
+border: none;
+}
+.upload-one{
+  position: absolute;
+  top: 1150px;
+  left: 45px;
+}
+.upload-two{
+  position: absolute;
+  top: 1850px;
+  left: 45px;
+}
+.upload-one .button{
+  
+}
+.info-one{
+  height: 100%;
+  width: 45%;
+  position: absolute;
+  top: 1050px;
+  left: 600px;
+}
+.info-two{
+  height: 100%;
+  width: 45%;
+  position: absolute;
+  top: 1750px;
+  left: 600px;
 }
 @keyframes anim-leaf-1-move {
   0%, 100% {
