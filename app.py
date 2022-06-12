@@ -34,7 +34,7 @@ def model_predict(img_path):
 @app.route('/', methods=['GET'])
 def index():
     # Main page
-    return render_template("index.html")
+    return render_template("uploadImg.html")
 
 @app.route('/uploader', methods=['GET', 'POST'])
 def upload():
@@ -55,5 +55,4 @@ def upload():
 
 if __name__ == '__main__':
     app.run()
-
 

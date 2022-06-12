@@ -1,0 +1,88 @@
+<html>
+   <head>
+      <style>
+         /*
+*****************************
+FONTS
+****************************
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  font-family: 'Inter', sans-serif;
+    margin:0;
+    padding:0;   
+}
+
+/*
+*****************************
+VARIABLES
+****************************
+*/
+
+:root{
+  --sunset-orange:#ff6900;
+  --sunset-pink:#eb144c;
+  --sand-light-brown:#f3cc91;
+  --sand-dark-brown:#eab875;
+  --sand-medium-brown:#e1c7a5;
+  --water-light-blue:#d3e3e2;
+  --water-dark-blue:#7bc5c1;
+}
+
+/*
+*****************************
+ABOUT SECTION
+****************************
+*/
+
+body{
+   display:flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.about-section{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction: column;
+}
+
+.section-container{
+  width:90vw;
+  border-radius:10px;
+  height:80vh;
+  background-color:var(--sand-light-brown);
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index:-4;
+}
+      </style>
+   </head>
+   </head>
+   <body>
+      <video autoplay muted loop audio="muted" id="myVideo">
+         <source
+           src="https://res.cloudinary.com/pooja-gera/video/upload/v1655019937/compressed_bg_vid_jiqeys.mp4"
+           type="video/mp4"
+         />
+       </video>
+      <div class="about-section">
+         <div class="section-container">
+            <form action = "/uploader" method = "POST"
+            enctype = "multipart/form-data">
+            <input type = "file" name = "file" />
+            <input type = "submit"/>
+         </form>
+         </div>
+      </div>
+   </body>
+</html>

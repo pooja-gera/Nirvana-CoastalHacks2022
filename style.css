@@ -116,15 +116,16 @@ ABOUT SECTION
   height:164px;
   position:absolute;
   left:1320px;
-  top:550px;
+  top:370px;
 }
 
 .section-one-ball{
-  top: 1250px;
+  top: 900px;
 }
 .section-two-ball{
-  top: 1970px;
+  top: 1500px;
 }
+
 /*
 https://res.cloudinary.com/pooja-gera/video/upload/v1655019937/compressed_bg_vid_jiqeys.mp4
   <video autoplay muted loop audio="muted" id="myVideo">
@@ -344,7 +345,7 @@ HERO SECTION ANIMATION
   animation: anim-sky 10s linear infinite;
   position: absolute;
   left: 300px;
-  top: 410px;
+  top: 300px;
 
 }
 .hero-sun {
@@ -431,24 +432,24 @@ HERO SECTION ANIMATION
 .hero-right h1{
   position: absolute;
   left: 600px;
-  top: 300px;
+  top: 200px;
 }
 .hero-right p{
   position: absolute;
-  top: 340px;
+  top: 240px;
   left: 600px;
   
 }
 .hero-right .para{
   position: absolute;
-    top: 380px;
+    top: 280px;
     width: 40%;
 }
 .section-one-window{
-  top: 1150px;
+  top: 900px;
 }
 .section-two-window{
-  top: 1870px;
+  top: 1570px;
 }
 .upload{
   height: 10%;
@@ -466,7 +467,7 @@ border-radius: 8px;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: var(--water-dark-blue);
+background-color: #2179EA;
 /* box-shadow: 5px 10px 20px #66bb6a79; */
 color: white;
 cursor: pointer;
@@ -475,13 +476,13 @@ border: none;
 }
 .upload-one{
   position: absolute;
-  top: 1150px;
-  left: 45px;
+  top: 880px;
+  left: -75px;
 }
 .upload-two{
   display: block;
   position: absolute;
-  top: 1850px;
+  top: 1500px;
   left: 580px;
 }
 .upload-two h2{
@@ -495,15 +496,21 @@ border: none;
   height: 100%;
   width: 45%;
   position: absolute;
-  top: 1050px;
+  top: 800px;
   left: 600px;
 }
 .info-two{
   height: 100%;
   width: 45%;
   position: absolute;
-  top: 1750px;
+  top: 1400px;
   left: 600px;
+}
+.info-one p{
+  margin-top: 15px;
+}
+.info-two p{
+  margin-top: 15px;
 }
 @keyframes anim-leaf-1-move {
   0%, 100% {
@@ -704,4 +711,132 @@ border: none;
   .hero-window {
     transform: translate(-50%, -50%) scale(1.5);
  }
+}
+
+/*
+*******************************
+BEACH SCENE
+*******************************
+*/
+
+.beach-roadtrip {
+  width: 100vw;
+  height: 100vh;
+}
+.st4 {
+  fill: #486b5c;
+}
+.st5 {
+  opacity: 0.55;
+  fill: #e6d3b0;
+}
+.st6 {
+  fill: #e9f4f2;
+}
+.st10 {
+  fill: #070707;
+}
+.st11 {
+  opacity: 0.05;
+}
+.st12,
+.st13 {
+  fill: #58ac9d;
+}
+.st13 {
+  stroke: #b7eae0;
+  stroke-width: 11;
+  stroke-miterlimit: 10;
+}
+.st14 {
+  opacity: 0.14;
+  fill: #379;
+}
+.st15 {
+  fill: #4c3d38;
+}
+.st16 {
+  opacity: 0.2;
+}
+.st17,
+.st18 {
+  fill: #63524e;
+}
+.st18 {
+  opacity: 0.1;
+}
+.st19 {
+  fill: #594842;
+}
+.st21 {
+  fill: #c1272d;
+}
+.st22 {
+  fill: #f9f9f9;
+}
+.st25 {
+  opacity: 0.89;
+}
+.st26,
+.st28 {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+.st28 {
+  stroke: #ededed;
+  stroke-width: 10;
+}
+.st29 {
+  fill: #fff;
+}
+.st30 {
+  fill: #595959;
+}
+.st33 {
+  opacity: 0.1;
+}
+.st34 {
+  opacity: 0.28;
+  fill: none;
+  stroke: #000;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+.st42 {
+  fill: #f7f3e8;
+}
+.st43 {
+  opacity: 0.09;
+  fill: #1e1e1e;
+}
+.st46 {
+  fill: none;
+  stroke: #2d2824;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+.st47 {
+  fill: #785c47;
+}
+
+/*second container ki image*/
+.display-img-2{
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: 690px;
+  left: 150px;
+}
+
+/*third container ki image*/
+.display-img-3{
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: 1300px;
+  left: 150px;
 }
