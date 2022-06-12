@@ -8,6 +8,8 @@ FONTS
 
 *{
   font-family: 'Inter', sans-serif;
+    margin:0;
+    padding:0;   
 }
 
 /*
@@ -124,10 +126,26 @@ ABOUT SECTION
   top: 1970px;
 }
 /*
+https://res.cloudinary.com/pooja-gera/video/upload/v1655019937/compressed_bg_vid_jiqeys.mp4
+  <video autoplay muted loop audio="muted" id="myVideo">
+      <source
+        src="https://res.cloudinary.com/pooja-gera/video/upload/v1655019937/compressed_bg_vid_jiqeys.mp4"
+        type="video/mp4"
+      />
+    </video>
+/*
 *****************************
 NAVIGATION BAR
 ****************************
 */
+
+#navbar{
+  background-color: #2179EA;
+  margin:0;
+  width:100vw;
+  z-index:1000;
+  color:white;
+}
 
 ul{
     list-style:none;
@@ -139,7 +157,26 @@ ul{
 li{
     padding:20px;
     margin-right:20px;
-    cursor: pointer;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .page-content {
+  padding-top: 60px;
+}
+#navbar a{
+  text-decoration:none;
+  color:white;
+}
+
+#navbar a:hover{
+  cursor:pointer;
+  font-size:large;
+  transition: 0.2s ease-in-out;
 }
 
 /*

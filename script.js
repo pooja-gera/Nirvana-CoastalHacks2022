@@ -1,3 +1,14 @@
+window.onscroll = function(){makeNavSticky()};
+var navbar = document.getElementById('navbar');
+var sticky = navbar.offsetTop;
+function makeNavSticky(){
+    if(window.pageYOffset >= sticky){
+        navbar.classList.add('sticky');
+    }else{
+        navbar.classList.remove('sticky');
+    }
+}
+
 var predictButton = document.querySelector(".predict-two")
 console.log(predictButton);
 let optionOne = document.querySelector(".option-one");
@@ -45,4 +56,5 @@ const options = {
         'X-RapidAPI-Host': 'geo-services-by-mvpc-com.p.rapidapi.com'
     }
 };
+
 
