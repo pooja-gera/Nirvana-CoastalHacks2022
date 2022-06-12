@@ -840,3 +840,11 @@ BEACH SCENE
   top: 1300px;
   left: 150px;
 }
+
+h1{
+  color:var(--sunset-orange);
+}
+
+body{
+  overflow-x: hidden;
+}
